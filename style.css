@@ -1,0 +1,203 @@
+@import url("https://fonts.googleapis.com/css2?family=Aladin&family=Manrope:wght@800&family=Montserrat:wght@700&family=Open+Sans:wght@300&family=Orbitron:wght@800&family=Outfit:wght@400;700&family=Overpass:wght@400;700&family=Pacifico&family=Poppins:wght@800&display=swap");
+
+:root {
+  --Very-light-grayish-blue: hsl(240, 78%, 98%);
+  --Light-grayish-blue: hsl(234, 14%, 74%);
+  --Grayish-blue: hsl(233, 13%, 49%);
+  --Dark-grayish-blue: hsl(232, 13%, 33%);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+.pricing__container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  background-color: var(--Very-light-grayish-blue);
+  background-image: url(./images/bg-top.svg), url(./images/bg-bottom.svg);
+  background-position: right top, left bottom;
+  background-repeat: no-repeat, no-repeat;
+  background-size: 20%, auto;
+}
+
+.pricing__title {
+  font-weight: 700;
+  font-size: 18px;
+  margin-bottom: 30px;
+  padding-top: 60px;
+  color: var(--Grayish-blue);
+}
+
+.pricing__toggle {
+  width: 35px;
+  height: 20px;
+  border-radius: 30px;
+  background-image: linear-gradient(
+    to right,
+    hsl(236, 72%, 79%),
+    hsl(237, 63%, 64%)
+  );
+  padding: 2px;
+  cursor: pointer;
+}
+
+.pricing__switch {
+  background-color: #ffffff;
+  border-radius: 40px;
+  z-index: 99;
+  width: 16px;
+  height: 16px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.pricing__switch--active {
+  -webkit-transform: translateX(15px);
+  -ms-transform: translateX(15px);
+  transform: translateX(15px);
+}
+
+.pricing__toggle--active {
+  background: hsl(236, 72%, 79%);
+}
+
+.pricing__switch--flex {
+  display: flex;
+  width: 20vw;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  color: var(--Light-grayish-blue);
+}
+
+.pricing__cards {
+  display: flex;
+  align-items: center;
+  margin-top: 60px;
+}
+
+.pricing__cards--ist {
+  width: 320px;
+  height: 350px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0px 10px 10px hsla(237, 63%, 64%, 0.25);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.pricing__cards--sec {
+  width: 320px;
+  height: 390px;
+  padding: 40px 20px;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-image: linear-gradient(
+    to right,
+    hsl(236, 72%, 79%),
+    hsl(237, 63%, 64%)
+  );
+  border-radius: 8px;
+  box-shadow: 0px 10px 10px hsla(237, 63%, 64%, 0.25);
+  color: #ffffff !important;
+}
+
+.cards__title,
+.cards__title--sec {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--Grayish-blue);
+  margin-bottom: 15px;
+}
+
+.cards__title--sec {
+  color: #ffffff;
+}
+
+.cards__price,
+.cards__price--sec {
+  font-size: 42px;
+  font-weight: 700;
+  color: var(--Dark-grayish-blue);
+  padding-bottom: 30px;
+}
+
+.cards__price--sec {
+  color: #ffffff;
+}
+
+.cards__desc,
+.cards__desc--mid,
+.cards__desc--two,
+.cards__desc--sec,
+.cards__desc--three,
+.cards__desc--third {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--Grayish-blue);
+  padding: 10px 0;
+  border-top: 1px solid var(--Light-grayish-blue);
+  border-bottom: 1px solid var(--Light-grayish-blue);
+  width: 100%;
+}
+
+.cards__desc--mid,
+.cards__desc--two,
+.cards__desc--three {
+  color: #ffffff;
+}
+
+.cards__desc--third,
+.cards__desc--sec,
+.cards__desc--two,
+.cards__desc--three {
+  border-top: none;
+}
+
+.cards__button,
+.cards__button--sec {
+  width: 100%;
+  height: 30px;
+  background-image: linear-gradient(
+    to right,
+    hsl(236, 72%, 79%),
+    hsl(237, 63%, 64%)
+  );
+  border: none;
+  border-radius: 4px;
+  margin-top: 30px;
+  color: #ffffff;
+}
+
+.cards__button:hover {
+  cursor: pointer;
+  background-image: none;
+  background-color: #ffffff;
+  border: 1px solid hsl(237, 63%, 64%);
+  color: hsl(237, 63%, 64%);
+}
+
+.cards__button--sec:hover {
+  cursor: pointer;
+  background: none;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+}
+
+.cards__button--sec {
+  background-image: none;
+  background-color: #ffffff;
+  color: hsl(237, 63%, 64%);
+}
