@@ -1,4 +1,5 @@
 # Frontend Mentor - Pricing component with toggle solution
+## URL: [Solution](https://pezemiwe.github.io/pricing-component-with-toggle-master/)
 
 This is a solution to the [Pricing component with toggle challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/pricing-component-with-toggle-8vPwRMIC). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
@@ -19,7 +20,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [Add solution URL here](https://pezemiwe.github.io/pricing-component-with-toggle-master/)
 
 ## My process
 
