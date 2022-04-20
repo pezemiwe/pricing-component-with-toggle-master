@@ -82,6 +82,7 @@
   display: flex;
   align-items: center;
   margin-top: 60px;
+  margin-bottom: 60px;
 }
 
 .pricing__cards--ist {
@@ -200,4 +201,27 @@
   background-image: none;
   background-color: #ffffff;
   color: hsl(237, 63%, 64%);
+}
+
+@media screen and (max-width: 768px) {
+  .pricing__container {
+    height: auto;
+  }
+
+  .pricing__cards {
+    flex-direction: column;
+  }
+
+  .pricing__cards--ist {
+    margin-bottom: 30px;
+    height: 350px;
+  }
+
+  .pricing__cards--sec {
+    margin-bottom: 30px;
+  }
+
+  .pricing__switch--flex {
+    width: 250px;
+  }
 }
